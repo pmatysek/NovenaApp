@@ -15,7 +15,7 @@ App is still in development, after implementing few more core features it will b
 - Instructions with Szustak's video how to pray,
 - Polish language support and mostly English
  
-##Todo list:
+## Todo list:
 - Everyday notifications that you should pray rosemary (probably few a day with possibility to configuration),
 - List of all mysteries of a rosary with proper fragments of the,
 - Instructions how to pray rosemary,
