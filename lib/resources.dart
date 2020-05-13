@@ -67,6 +67,54 @@ class Resources {
 
   String get supportHtml => _getText("supportHtml");
 
+  String get joyfulMysteries => _getText("joyfulMysteries");
+
+  String get joyfulMysteries1 => _getText("joyfulMysteries1");
+
+  String get joyfulMysteries2 => _getText("joyfulMysteries2");
+
+  String get joyfulMysteries3 => _getText("joyfulMysteries3");
+
+  String get joyfulMysteries4 => _getText("joyfulMysteries4");
+
+  String get joyfulMysteries5 => _getText("joyfulMysteries5");
+
+  String get sorrowfulMysteries => _getText("sorrowfulMysteries");
+
+  String get sorrowfulMysteries1 => _getText("sorrowfulMysteries1");
+
+  String get sorrowfulMysteries2 => _getText("sorrowfulMysteries2");
+
+  String get sorrowfulMysteries3 => _getText("sorrowfulMysteries3");
+
+  String get sorrowfulMysteries4 => _getText("sorrowfulMysteries4");
+
+  String get sorrowfulMysteries5 => _getText("sorrowfulMysteries5");
+
+  String get gloriousMysteries => _getText("gloriousMysteries");
+
+  String get gloriousMysteries1 => _getText("gloriousMysteries1");
+
+  String get gloriousMysteries2 => _getText("gloriousMysteries2");
+
+  String get gloriousMysteries3 => _getText("gloriousMysteries3");
+
+  String get gloriousMysteries4 => _getText("gloriousMysteries4");
+
+  String get gloriousMysteries5 => _getText("gloriousMysteries5");
+
+  String get luminousMysteries => _getText("luminousMysteries");
+
+  String get luminousMysteries1 => _getText("luminousMysteries1");
+
+  String get luminousMysteries2 => _getText("luminousMysteries2");
+
+  String get luminousMysteries3 => _getText("luminousMysteries3");
+
+  String get luminousMysteries4 => _getText("luminousMysteries4");
+
+  String get luminousMysteries5 => _getText("luminousMysteries5");
+
   static Map<String, String> _localizedValues;
 
   static Map<String, String> _plValues = {
@@ -101,7 +149,31 @@ class Resources {
     "howToPrayHtml":
         "<br>Nowenna Pompejańska trwa 54 dni i składa się z dwóch części: błagalnej i dziękczynnej (każda po 27 dni). Każdego dnia nowenny odmawiamy conajmniej 3 części Różańca Świętego. Najczęściej są to tajemnice radosne, bolesne i chwalebne, ale niekoniecznie (patrz filmik).<br>Przed rozpoczęciem każdego z różańców podczas nowenny mówimy:<br><br><b>Ten różaniec odmawiam na Twoją cześć Królowo Różańca Świętego oraz w tej następującej intencji…</b><br><br>Ważne aby wybrać jedną konkretną intencję i trzymać się jej przez cały okres trwania nowenny.br>Każdy różaniec podczas nowenny kończymy trzykrotnym zawołaniem do Matki Bożej:<br><br><b>Królowo Różańca Świętego, módl się za nami!</b><br><br>Podczas części błagalnej, a więc pierwsze 27 dni po zakończeniu ostatniego różańca każdego dnia odmawiamy modlitwę:<br><br><b>Pomnij o miłosierna Panno Różańcowa z Pompejów, jako nigdy jeszcze nie słyszano, aby ktokolwiek z czcicieli Twoich, z Różańcem Twoim, pomocy Twojej wzywający, miał być przez Ciebie opuszczony. Ach, nie gardź prośbą moją, o Matko Słowa Przedwiecznego, ale przez święty Twój różaniec i przez  upodobanie, jakie okazujesz dla Twojej świątyni w Pompejach wysłuchaj mnie dobrotliwie. Amen.</b><br><br>Natomiast w drugiej części nowenny, dziękczynnej dziękujemy Maryi za otrzymane łaski następującą modlitwą:<br><br><b>Cóż Ci dać mogę, o Królowo pełna miłości? Moje całe życie poświęcam Tobie. Ile mi sił starczy, będę rozszerzać cześć Twoją, o Dziewico Różańca Świętego z Pompejów, bo gdy Twojej pomocy wezwałem, nawiedziła mnie łaska Boża. Wszędzie będę opowiadać o miłosierdziu, które mi wyświadczyłaś. O ile zdołam będę rozszerzać nabożeństwo do Różańca Świętego, wszystkim głosić będę, jak dobrotliwie obeszłaś się ze mną, aby i niegodni, tak jak i ja, grzesznicy, z zaufaniem do Ciebie się udawali. O, gdyby cały świat wiedział jak jesteś dobra, jaką masz litość nad cierpiącymi, wszystkie stworzenia uciekałyby się do Ciebie. Amen. </b><br><br><br>Więcej wątpliwości na temat samej nowenny oraz sposobu jej odmawiania może rozwiać ojciec Adam Szustak na poniższym filmiku:",
     "supportHtml":
-        "<h5>Jeśli chcesz wesprzeć autora aplikacji to bardzo proszę, pomódl się w jego intencji! <br>Jeżeli natomiast uważasz, że aplikacja jest naprawdę dobra i chętnie zapłaciłbyś za nią albo wsparł jej rozwój finansowo, to bardzo proszę wpłać tę kwotę na dowolnie wybrany cel charytatywny :-)<br><br> Pozdrawiam,<br> Paweł Matysek</h5>",
+        "<h5>Jeśli chcesz wesprzeć autora aplikacji to bardzo proszę, pomódl się w jego intencji! <br>Jeżeli natomiast uważasz, że aplikacja jest naprawdę dobra i chętnie zapłaciłbyś za nią albo wsparł jej rozwój finansowo, to bardzo proszę wpłać tę kwotę na dowolnie wybrany cel charytatywny :-)<br><br> Pozdrawiam,<br> Paweł</h5>",
+    "joyfulMysteries": "Tajemnice Radosne",
+    "joyfulMysteries1": "Zwiastowanie Najświętszej Maryi Panny",
+    "joyfulMysteries2": "Nawiedzenie Świętej Elżbiety",
+    "joyfulMysteries3": "Narodzenie Pana Jezusa",
+    "joyfulMysteries4": "Ofiarowanie Pana Jezusa w świątyni",
+    "joyfulMysteries5": "Znalezienie Pana Jezusa w świątyni",
+    "sorrowfulMysteries": "Tajemnice Bolesne",
+    "sorrowfulMysteries1": "Modlitwa w Ogrójcu",
+    "sorrowfulMysteries2": "Biczowanie Pana Jezusa",
+    "sorrowfulMysteries3": "Cierniem ukoronowanie Pana Jezusa",
+    "sorrowfulMysteries4": "Droga krzyżowa",
+    "sorrowfulMysteries5": "Śmierć Pana Jezusa na krzyżu",
+    "gloriousMysteries": "Tajemnice Chwalebne",
+    "gloriousMysteries1": "Zmartwychwstanie Pana Jezusa",
+    "gloriousMysteries2": "Wniebowstąpienie",
+    "gloriousMysteries3": "Zesłanie Ducha Świętego",
+    "gloriousMysteries4": "Wniebowzięcie NMP",
+    "gloriousMysteries5": "Ukoronowanie NMP na Królową Nieba i Ziemi",
+    "luminousMysteries": "Tajemnice Światła",
+    "luminousMysteries1": "Chrzest Pana Jezusa w Jordanie",
+    "luminousMysteries2": "Objawienie Siebie na weselu w Kanie",
+    "luminousMysteries3": "Głoszenie Królestwa Bożego i wzywanie do nawrócenia",
+    "luminousMysteries4": "Przemienienie Siebie na górze Tabor",
+    "luminousMysteries5": "Ustanowienie Eucharystii",
   };
 
   static Map<String, String> _enValues = {
@@ -135,6 +207,30 @@ class Resources {
         "<br>Nowenna Pompejańska trwa 54 dni i składa się z dwóch części: błagalnej i dziękczynnej (każda po 27 dni). Każdego dnia nowenny odmawiamy conajmniej 3 części Różańca Świętego. Najczęściej są to tajemnice radosne, bolesne i chwalebne, ale niekoniecznie (patrz filmik).<br>Przed rozpoczęciem każdego z różańców podczas nowenny mówimy:<br><br><b>Ten różaniec odmawiam na Twoją cześć Królowo Różańca Świętego oraz w tej następującej intencji…</b><br><br>Ważne aby wybrać jedną konkretną intencję i trzymać się jej przez cały okres trwania nowenny.br>Każdy różaniec podczas nowenny kończymy trzykrotnym zawołaniem do Matki Bożej:<br><br><b>Królowo Różańca Świętego, módl się za nami!</b><br><br>Podczas części błagalnej, a więc pierwsze 27 dni po zakończeniu ostatniego różańca każdego dnia odmawiamy modlitwę:<br><br><b>Pomnij o miłosierna Panno Różańcowa z Pompejów, jako nigdy jeszcze nie słyszano, aby ktokolwiek z czcicieli Twoich, z Różańcem Twoim, pomocy Twojej wzywający, miał być przez Ciebie opuszczony. Ach, nie gardź prośbą moją, o Matko Słowa Przedwiecznego, ale przez święty Twój różaniec i przez  upodobanie, jakie okazujesz dla Twojej świątyni w Pompejach wysłuchaj mnie dobrotliwie. Amen.</b><br><br>Natomiast w drugiej części nowenny, dziękczynnej dziękujemy Maryi za otrzymane łaski następującą modlitwą:<br><br><b>Cóż Ci dać mogę, o Królowo pełna miłości? Moje całe życie poświęcam Tobie. Ile mi sił starczy, będę rozszerzać cześć Twoją, o Dziewico Różańca Świętego z Pompejów, bo gdy Twojej pomocy wezwałem, nawiedziła mnie łaska Boża. Wszędzie będę opowiadać o miłosierdziu, które mi wyświadczyłaś. O ile zdołam będę rozszerzać nabożeństwo do Różańca Świętego, wszystkim głosić będę, jak dobrotliwie obeszłaś się ze mną, aby i niegodni, tak jak i ja, grzesznicy, z zaufaniem do Ciebie się udawali. O, gdyby cały świat wiedział jak jesteś dobra, jaką masz litość nad cierpiącymi, wszystkie stworzenia uciekałyby się do Ciebie. Amen. </b><br><br><br>Więcej wątpliwości na temat samej nowenny oraz sposobu jej odmawiania może rozwiać ojciec Adam Szustak na poniższym filmiku:",
     "supportHtml":
         "<h5>Jeśli chcesz wesprzeć autora aplikacji to bardzo proszę, pomódl się w jego intencji! <br>Jeżeli natomiast uważasz, że aplikacja jest naprawdę dobra i chętnie zapłaciłbyś za nią albo wsparł jej rozwój finansowo, to bardzo proszę wpłać tę kwotę na dowolnie wybrany cel charytatywny :-)<br><br> Pozdrawiam,<br> Paweł Matysek</h5>",
+    "joyfulMysteries": "Joyful Mystery",
+    "joyfulMysteries1": "The Annunciation of the Lord to Mary",
+    "joyfulMysteries2": "The Visitation of Mary to Elizabeth",
+    "joyfulMysteries3": "The Nativity of our Lord Jesus Christ",
+    "joyfulMysteries4": "The Presentation of our Lord",
+    "joyfulMysteries5": "Finding Jesus in the Temple at age 12",
+    "sorrowfulMysteries": "Sorroful Mystery",
+    "sorrowfulMysteries1": "The Agony of Jesus in the Garden",
+    "sorrowfulMysteries2": "The Scourging at the Pillar",
+    "sorrowfulMysteries3": "Jesus is Crowned with Thorns",
+    "sorrowfulMysteries4": "Jesus Carried the Cross",
+    "sorrowfulMysteries5": "The Crucifixion of our Lord",
+    "gloriousMysteries": "Glorious Mystery",
+    "gloriousMysteries1": "The Resurrection of Jesus Christ",
+    "gloriousMysteries2": "The Ascension of Jesus to Heaven",
+    "gloriousMysteries3": "The Descent of the Holy Ghost",
+    "gloriousMysteries4": "The Assumption of Mary into Heaven",
+    "gloriousMysteries5": "Mary is Crowned as Queen of Heaven and Earth",
+    "luminousMysteries": "Luminous Mystery",
+    "luminousMysteries1": "The Baptism in the Jordan",
+    "luminousMysteries2": "The Wedding at Cana",
+    "luminousMysteries3": "The Proclamation of the Kingdom",
+    "luminousMysteries4": "The Transfiguration",
+    "luminousMysteries5": "The Institution of the Eucharist",
   };
 
   static Map<String, Map<String, String>> _allValues = {

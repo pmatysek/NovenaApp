@@ -11,7 +11,7 @@ description: A new Flutter application.
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 1.0.0+1
+version: 1.0.1+1
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -25,15 +25,21 @@ dependencies:
   cupertino_icons: ^0.1.3
   shared_preferences: ^0.5.4
   youtube_player: ^3.5.0
-  youtube_player_flutter: ^6.0.3+2
+  youtube_player_flutter: ^6.1.0+4
   percent_indicator: ^2.1.1+1
   flutter_speed_dial: ^1.2.5
   flutter_html: ^0.11.1
+  flutter_launcher_icons: ^0.7.5
 
 dev_dependencies:
   flappy_translator: ^1.2.2
   flutter_test:
     sdk: flutter
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "icon.png"
 
 flappy_translator:
   input_file_path: "resources.csv"

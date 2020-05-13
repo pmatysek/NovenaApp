@@ -33,7 +33,7 @@ class _HowToPrayScreenState extends State<HowToPrayScreen> {
                       flags: YoutubePlayerFlags(
                         mute: false,
                         autoPlay: false,
-                        forceHideAnnotation: true,
+                        forceHideAnnotation: false,
                       ),
                     ),
                     showVideoProgressIndicator: true,

@@ -41,7 +41,7 @@ class _ActiveNovenaScreenState extends State<ActiveNovenaScreen> {
               flags: YoutubePlayerFlags(
                 mute: false,
                 autoPlay: false,
-                forceHideAnnotation: true,
+                forceHideAnnotation: false,
               ),
             ),
             showVideoProgressIndicator: true,

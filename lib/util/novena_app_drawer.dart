@@ -39,6 +39,14 @@ class NovenaAppDrawer extends StatelessWidget {
               Navigator.of(context).pop();
             },
           ),
+          ListTile(
+            leading: Icon(Icons.format_list_bulleted),
+            title: Text("Tajemnice różańca"),
+            onTap: () {
+              _updateScreen(Screen.ROSARY_MYSTERIES);
+              Navigator.of(context).pop();
+            },
+          ),
 //          ListTile(
 //            leading: Icon(Icons.info),
 //            title: Text(Resources.of(context).aboutNovenaTitle),

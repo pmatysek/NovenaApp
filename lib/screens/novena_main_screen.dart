@@ -3,6 +3,7 @@ import 'package:novena/classes/novena.dart';
 import 'package:novena/screens/about_novena_screen.dart';
 import 'package:novena/screens/active_novena_screen.dart';
 import 'package:novena/screens/how_to_pray_screen.dart';
+import 'package:novena/screens/rosary_mysteries_screen.dart';
 import 'package:novena/screens/support_screen.dart';
 import 'package:novena/util/novena_app_drawer.dart';
 import 'package:novena/classes/screen_enum.dart';
@@ -45,6 +46,22 @@ class _NovenaMainScreenState extends State<NovenaMainScreen> {
     switch (_activeScreen) {
       case Screen.NOVENA_MAIN:
         if (novena != null && novena.isStarted()) {
+          if (novena.novenaDay > 54) {
+            return AlertDialog(
+                title: Text("Zakończyłeś Nowennę!"),
+                content: Text("Gratulację, udało Ci się zakończyć Nowennę Pompejańską :-) Zachęcam do odmówienia kolejnej"),
+                actions: <Widget>[
+                  FlatButton(
+                    child: Text('Ok'),
+                    onPressed: () {
+                      novena.finishNovena();
+                      _updateNovena(novena);
+                      Navigator.of(context).pop();
+                    },
+                  ),
+                ],);
+
+          }
           return ActiveNovenaScreen(novena, _updateNovena);
         }
         return StartNovenaScreen(novena, _updateNovena);
@@ -54,6 +71,9 @@ class _NovenaMainScreenState extends State<NovenaMainScreen> {
         return HowToPrayScreen();
       case Screen.SUPPORT:
         return SupportScreen();
+      case Screen.ROSARY_MYSTERIES:
+        return RosaryMysteriesScreen();
+        break;
     }
   }
 
@@ -70,7 +90,7 @@ class _NovenaMainScreenState extends State<NovenaMainScreen> {
             if (snapshot.connectionState == ConnectionState.done) {
               return getActiveScreenWidget(snapshot.data);
             } else {
-              return Center(child:CircularProgressIndicator());
+              return Center(child: CircularProgressIndicator());
             }
           },
         ));
