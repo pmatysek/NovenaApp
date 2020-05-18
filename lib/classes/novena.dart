@@ -12,7 +12,7 @@ class Novena {
 
   int get novenaDay => Date.now().difference(_novenaStartDate).inDays;
 
-  DateTime get finishDate => _novenaStartDate.add(Duration(days: 54));
+  DateTime get finishDate => _novenaStartDate.add(Duration(days: 53));
 
   String get formattedDate => Date.getFormattedDate(finishDate);
 
