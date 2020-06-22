@@ -3,7 +3,7 @@
 It's a mobile app written in Flutter (Dart). This is help application for praying Pompei Novena.
 Pompei Novena is a kind o prayer. It consist of 54 days divided in to 2 parts and 15 (or more) of rosemary decades prayed everyday. This app is wrriten to help in regulary praying rosemaries during the novena. It's provides also all important messages of how to pray.
 
-App is still in development, after implementing few more core features it will be available in the PlayStore.
+App is available already in the Google play store: https://play.google.com/store/apps/details?id=pl.matissoftware.novenaapp
 
 ## Features
 - Novena statistics on main screen:
