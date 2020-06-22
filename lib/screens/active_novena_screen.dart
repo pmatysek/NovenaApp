@@ -37,7 +37,7 @@ class _ActiveNovenaScreenState extends State<ActiveNovenaScreen> {
           YoutubePlayer(
             controller: YoutubePlayerController(
               initialVideoId: Considerations.getConsiderationYoutubeUrlForDay(
-                  ConsiderationType.LANGUSTA_2018, widget._novena.novenaDay),
+                  widget._novena.considerationType, widget._novena.novenaDay),
               flags: YoutubePlayerFlags(
                 mute: false,
                 autoPlay: false,

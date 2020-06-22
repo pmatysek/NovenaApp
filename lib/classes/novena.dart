@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:novena/util/considerations.dart';
 import 'package:novena/util/date.dart';
 import '../resources.dart';
 
@@ -7,6 +8,8 @@ class Novena {
   DateTime _novenaStartDate;
 
   int _decadesToPray;
+
+  ConsiderationType _considerationType;
 
   DateTime get novenaStartDate => _novenaStartDate;
 
@@ -19,10 +22,13 @@ class Novena {
   int get daysToFinish => 54 - novenaDay;
 
   int get decadesToPray => _decadesToPray;
-  Novena(this._novenaStartDate, this._decadesToPray);
 
-  static Novena startNovenaFromDate(DateTime startDate) {
-    return Novena(startDate, 15);
+  ConsiderationType get considerationType => _considerationType;
+
+  Novena(this._novenaStartDate, this._decadesToPray, this._considerationType);
+
+  static Novena startNovena(DateTime startDate, ConsiderationType considerationType) {
+    return Novena(startDate, 15, considerationType);
   }
 
   void finishNovena() {

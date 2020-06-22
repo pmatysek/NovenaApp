@@ -115,6 +115,14 @@ class Resources {
 
   String get luminousMysteries5 => _getText("luminousMysteries5");
 
+  String get LANGUSTA_2016 => _getText("LANGUSTA_2016");
+
+  String get LANGUSTA_2017 => _getText("LANGUSTA_2017");
+
+  String get LANGUSTA_2018 => _getText("LANGUSTA_2018");
+
+  String get chooseConsiderations => _getText("chooseConsiderations");
+
   static Map<String, String> _localizedValues;
 
   static Map<String, String> _plValues = {
@@ -174,6 +182,10 @@ class Resources {
     "luminousMysteries3": "Głoszenie Królestwa Bożego i wzywanie do nawrócenia",
     "luminousMysteries4": "Przemienienie Siebie na górze Tabor",
     "luminousMysteries5": "Ustanowienie Eucharystii",
+    "LANGUSTA_2016": "o. Adam Szustak 2016",
+    "LANGUSTA_2017": "o. Adam Szustak 2017",
+    "LANGUSTA_2018": "o. Adam Szustak 2018",
+    "chooseConsiderations": "Wybierz rozwarzania",
   };
 
   static Map<String, String> _enValues = {
@@ -231,6 +243,10 @@ class Resources {
     "luminousMysteries3": "The Proclamation of the Kingdom",
     "luminousMysteries4": "The Transfiguration",
     "luminousMysteries5": "The Institution of the Eucharist",
+    "LANGUSTA_2016": "o. Adam Szustak 2016",
+    "LANGUSTA_2017": "o. Adam Szustak 2017",
+    "LANGUSTA_2018": "o. Adam Szustak 2018",
+    "chooseConsiderations": "Choose considerations",
   };
 
   static Map<String, Map<String, String>> _allValues = {

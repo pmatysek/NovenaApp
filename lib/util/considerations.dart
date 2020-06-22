@@ -1,6 +1,10 @@
+import 'package:flutter/cupertino.dart';
+import 'package:novena/resources.dart';
+
 class Considerations {
   static Map<ConsiderationType, List<String>> considerationsYoutubeUrls = {
-    ConsiderationType.LANGUSTA_2018: ["QcjjXVxPc0c",
+    ConsiderationType.LANGUSTA_2018: [
+      "QcjjXVxPc0c",
       "QPurZTKIWcM",
       "c8WHRHNxJDA",
       "SwXuUfbKknM",
@@ -53,10 +57,133 @@ class Considerations {
       "OgsJOFQloog",
       "dTlRcDIpPzA",
       "ENkdnY6cZsc",
-      "dXSZM1hqRmo"]
+      "dXSZM1hqRmo"
+    ],
+    ConsiderationType.LANGUSTA_2017: [
+      "gJx-1sGVjyM",
+      "2q5s0QJq_Tc",
+      "IO185WxpF8E",
+      "SuWNxqeVxbU",
+      "U01Wb3oDhms",
+      "7Jz_NWWJsdg",
+      "WOjKUDAmh0g",
+      "x-j9rOnr4kE",
+      "_cyvQZ9dsi8",
+      "jQPZaspslyk",
+      "seTDOXI3md0",
+      "UFoZfA1AdYs",
+      "oBACT9whalM",
+      "wC29ZN46zSw",
+      "wdU_YNbdlp8",
+      "S0y3KrBm2_g",
+      "Hm_PleJr7CU",
+      "90TkAb6t1_o",
+      "UfVr3E4jFwU",
+      "TyWXCj-SQOI",
+      "gakY8mwy9VM",
+      "-1lvp5gr-mg",
+      "g6n3kUMEEGQ",
+      "WIl1swydyLA",
+      "nXhs-RWg4NQ",
+      "q_3J80CFfLs",
+      "nlUA-cH07gs",
+      "4iLEg6dJCzU",
+      "yldeJz6b4P8",
+      "DS3khFcxUro",
+      "jScZ4E6_unE",
+      "MMrZk2BAgTc",
+      "sNcnyQx7Afg",
+      "lvPfel1Fjmc",
+      "y7JQpt1xUro",
+      "Ya-FcX8WyGE",
+      "3wWkMzchxN0",
+      "nsx1tynhhV0",
+      "THf7Rlb_4rc",
+      "IjZMLD1aL1Q",
+      "tZ8q1xfNzGA",
+      "FvdNM7aTkHY",
+      "vPzrmifQyrg",
+      "kXk6AXg-xfQ",
+      "wUdLERsCkPo",
+      "azRlYm5senw",
+      "ga2rXBnWorQ",
+      "4YAOopxuW64",
+      "GGlHa_fyStM",
+      "BY0sws85kJI"
+    ],
+    ConsiderationType.LANGUSTA_2016: [
+      "1NDHNt2EvFM",
+      "KK3PBLQW79I",
+      "7i6vnjTOzwI",
+      "SvYHbue_KVQ",
+      "9_kGebFLA8c",
+      "ahjal8wppw0",
+      "m6IJhckdOV0",
+      "b_HvJ0GF-lM",
+      "t8aRkt2Jygk",
+      "f-T7BpJ-QPs",
+      "1AEAHPS5rio",
+      "3Eat6Oxzy2k",
+      "iQ8QAxX6cg0",
+      "asUqj9yUKxA",
+      "4ZpfeaprEok",
+      "9L_KPNSXE_k",
+      "XYKTPDqJ8Ns",
+      "P-GRItXaCBc",
+      "ubJGzdEG780",
+      "nDReJdXaJiw",
+      "gcWAIOuP8zQ",
+      "-QDjhAp10xM",
+      "xGq-fZZwOVo",
+      "rkj_Glkp1-o",
+      "iCYNlvm-WRw",
+      "K2JNhlGDggI",
+      "2R1mV2T_H6w",
+      "WHc4bAJQf3o",
+      "EkpHJ666DWk",
+      "yRpEuo8CSv4",
+      "KE-6py6cb78",
+      "RpycoTse74s",
+      "uXIwW1gTOIs",
+      "kWVdtThUUO4",
+      "L3SlfXPIp1s",
+      "va_lG90tT9w",
+      "2Y24TrA6q4Y",
+      "O6vptZsvl8Q",
+      "UNbsG0kgN50",
+      "mWXw4JmC5eU",
+      "KlxxC2rSjcg",
+      "u9Nuc9_04RI",
+      "Y4PHnnmrQNI",
+      "TBQykUDo_2Q",
+      "Y-O7RMzKjGY",
+      "0Ox_tzDmP68",
+      "PEfkIqQtJ0g",
+      "rIPoRSERjpY",
+      "OPWgCvihbmM",
+      "TQqX2Zq65V8",
+      "-cR7NYC2Obs",
+      "xXzR1VNvObM",
+      "CtHG44I--BU",
+      "_6To7hu7cZA"
+    ]
   };
-  static String getConsiderationYoutubeUrlForDay(ConsiderationType considerationType, int novenaDay){
+
+  static String getConsiderationYoutubeUrlForDay(
+      ConsiderationType considerationType, int novenaDay) {
     return considerationsYoutubeUrls[considerationType][novenaDay];
+  }
+
+  static getConsiderationName(
+      ConsiderationType considerationType, BuildContext context) {
+    switch (considerationType) {
+      case ConsiderationType.LANGUSTA_2016:
+        return Resources.of(context).LANGUSTA_2016;
+      case ConsiderationType.LANGUSTA_2017:
+        return Resources.of(context).LANGUSTA_2017;
+      case ConsiderationType.LANGUSTA_2018:
+        return Resources.of(context).LANGUSTA_2018;
+    }
   }
 }
 

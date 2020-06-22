@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:novena/classes/novena.dart';
+import 'package:novena/util/considerations.dart';
 import 'package:novena/util/date.dart';
 
 import '../resources.dart';
+import 'considerations_drop_down.dart';
 
 class StartNovenaScreen extends StatefulWidget {
   Novena _novena;
@@ -19,20 +21,22 @@ class StartNovenaScreen extends StatefulWidget {
 }
 
 class _StartNovenaScreenState extends State<StartNovenaScreen> {
-
-  Future _selectStartNovenaDate() async {
+  Future<void> _selectStartNovenaDate(BuildContext context) async {
     DateTime pickedDate = await showDatePicker(
         context: context,
         initialDate: Date.now(),
         firstDate: Date.now().subtract(Duration(days: 54)),
-        lastDate: Date.now()
-    );
-    if(pickedDate != null) {
-      widget._novena = Novena.startNovenaFromDate(pickedDate);
+        lastDate: Date.now());
+    if (pickedDate != null) {
+      ConsiderationType considerationType = await showDialog<ConsiderationType>(
+          context: context,
+          builder: (BuildContext dialogContext) {
+            return ConsiderationsDropDown();
+          });
+      widget._novena = Novena.startNovena(pickedDate, considerationType);
       widget.updateNovena();
     }
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +50,7 @@ class _StartNovenaScreenState extends State<StartNovenaScreen> {
             ),
             color: Theme.of(context).buttonColor,
             onPressed: () {
-              _selectStartNovenaDate();
+              _selectStartNovenaDate(context);
             },
           ),
         ],
