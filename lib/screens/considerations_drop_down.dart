@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:novena/classes/novena.dart';
 import 'package:novena/util/considerations.dart';
 
 import '../resources.dart';

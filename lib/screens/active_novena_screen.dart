@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:novena/classes/novena.dart';
 import 'package:novena/util/considerations.dart';
 import 'package:percent_indicator/percent_indicator.dart';
@@ -8,11 +9,12 @@ import '../resources.dart';
 class ActiveNovenaScreen extends StatefulWidget {
   final Novena _novena;
   final ValueChanged<Novena> _updateNovena;
+  FlutterLocalNotificationsPlugin notificationsPlugin;
 
   @override
   _ActiveNovenaScreenState createState() => _ActiveNovenaScreenState();
 
-  ActiveNovenaScreen(this._novena, this._updateNovena);
+  ActiveNovenaScreen(this._novena, this._updateNovena, this.notificationsPlugin);
 
   void updateNovena() {
     _updateNovena(_novena);
@@ -188,6 +190,7 @@ class _ActiveNovenaScreenState extends State<ActiveNovenaScreen> {
               onPressed: () {
                 widget._novena.finishNovena();
                 widget.updateNovena();
+                widget.notificationsPlugin.cancelAll();
                 Navigator.of(context).pop();
               },
             ),
